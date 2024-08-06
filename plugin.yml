@@ -1,11 +1,20 @@
 name: SkyWars
 api: 5.0.0
-version: 1.0
-main: SkyWars\Loader
+main: com\Skywars\Loader
+version: 1.0.0
 author: WzyGee-Dev
 commands:
-  sw:
-    permission: skywars.command
+  swcreate:
+    permission: skywars.command.swcreate
+  swsign:
+    permission: skywars.command.swsign
+  swentity:
+    permission: skywars.command.swentity
+
 permissions:
-  skywars.command:
+  skywars.command.swcreate:
+    default: true
+  skywars.command.swsign:
+    default: true
+  skywars.command.swentity:
     default: true
